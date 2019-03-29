@@ -1,6 +1,6 @@
-class CreateAdminPreferences < ActiveRecord::Migration[5.2]
+class CreatePreferences < ActiveRecord::Migration[5.2]
   def change
-    create_table :admin_preferences do |t|
+    create_table :preferences do |t|
       t.string :song_order
       t.string :artist_order
 

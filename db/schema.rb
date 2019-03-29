@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_03_29_085324) do
 
-  create_table "admin_preferences", force: :cascade do |t|
+  create_table "preferences", force: :cascade do |t|
     t.string "song_order"
     t.string "artist_order"
     t.datetime "created_at", null: false
