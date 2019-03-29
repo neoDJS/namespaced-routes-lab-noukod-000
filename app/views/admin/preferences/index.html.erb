@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Admin Preferences</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Song order</th>
+      <th>Artist order</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @admin_preferences.each do |admin_preference| %>
+      <tr>
+        <td><%= admin_preference.song_order %></td>
+        <td><%= admin_preference.artist_order %></td>
+        <td><%= link_to 'Show', admin_preference %></td>
+        <td><%= link_to 'Edit', edit_admin_preference_path(admin_preference) %></td>
+        <td><%= link_to 'Destroy', admin_preference, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Admin Preference', new_admin_preference_path %>
