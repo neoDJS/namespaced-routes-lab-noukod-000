@@ -19,10 +19,15 @@ ActiveRecord::Schema.define(version: 2019_03_29_085324) do
   end
 
   create_table "preferences", force: :cascade do |t|
+<<<<<<< HEAD
     t.string "song_sort_order"
     t.string "artist_sort_order"
     t.boolean "allow_create_songs"
     t.boolean "allow_create_artists"
+=======
+    t.string "song_order"
+    t.string "artist_order"
+>>>>>>> 0e7bf1b8ec5e5f2ad42b4b6cd255d38abdd634dd
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
